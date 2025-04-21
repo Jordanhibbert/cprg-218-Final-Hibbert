@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Nunito Sans', 'Helvetica Neue','Segoe UI', Arial, sans-serif;
     color: #231F20;
     background-color: #FBFAF5;
     line-height: 1.6;
@@ -23,9 +23,12 @@
     align-items: center;
     flex-wrap: wrap;
   }
+  h1, h2, h3 {
+    font-family: 'Cormorant', 'Palatino Linotype' 'Georgia', 'Times New Roman', serif;
+  }
   
   nav .logo {
-    font-family: 'Cormorant', 'Georgia', serif;
+    font-family: 'Cormorant', 'Palatino Linotype' 'Georgia', 'Times New Roman', serif;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
