@@ -156,7 +156,7 @@ main {
   }
 
   .testimonials {
-    background-color: #B6C3BA; /* Sand Beige background */
+    background-color: #B6C3BA;
     padding: 2rem;
     text-align: center;
   }
@@ -298,6 +298,57 @@ main {
   
   .amenities p {
     font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  
+  /* Section Headers with Background */
+  .activities header {
+    width: 100%;
+    background-color: #B6C3BA;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .activities header h2 {
+    font-family: 'Cormorant', serif;
+    font-size: 1.75rem;
+    color: #1F6776;
+    margin: 0;
+  }
+  
+  /* Activity Cards */
+  .activities article {
+    background-color: #FBFAF5;
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    max-width: 320px;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .activities article h3 {
+    font-family: 'Cormorant', serif;
+    color: #1F6776;
+    margin-bottom: 0.5rem;
+  }
+  
+  .activities article p {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 1rem;
   }
 
   footer {
