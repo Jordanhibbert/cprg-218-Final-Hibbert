@@ -98,7 +98,7 @@ main {
     background: #fff;
     border: 1px solid #ddd;
     padding: 1rem;
-    text-align: center;
+    text-align: left;
     border-radius: 0.5rem;
   }
   
@@ -175,6 +175,8 @@ main {
   /* Text content layout */
   article.dining-row section {
     flex: 1;
+    background-color: #B6C3BA;
+    padding: 1rem;
   }
   
   /* Responsive stacking on smaller screens */
