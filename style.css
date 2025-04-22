@@ -15,6 +15,8 @@ main {
     background-color: #1F6776;
     color: #FBFAF5;
     padding: 1rem;
+    position: sticky;
+    top: 0;
   }
   
   nav {
@@ -162,11 +164,6 @@ main {
     flex-wrap: wrap;
   }
   
-  /* Alternating layout using semantic class */
-  article.dining-row.reverse {
-    flex-direction: row-reverse;
-  }
-  
   /* Image styling */
   article.dining-row img {
     width: 35%;
@@ -199,7 +196,34 @@ main {
       text-align: left;
     }
   }
-
+  
+  .booking-layout {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 2rem 0;
+  }
+  
+  .booking-layout figure,
+  .booking-layout form {
+    flex: 1 1 400px;
+  }
+  
+  .booking-layout img {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    height: 100%;
+    max-height: 500px;
+  }
+  
+  @media (max-width: 768px) {
+    .booking-layout {
+      flex-direction: column;
+    }
+  }
+  
   footer {
     background-color: #1F6776;
     color: #FBFAF5;
