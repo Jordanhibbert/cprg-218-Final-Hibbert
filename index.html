@@ -26,10 +26,12 @@
     <img src="media/couple.jpg" alt="Beachfront view at Shangri-La resort" />
   </section>
   
-  <section class="weather">
-    <h2>Current Weather</h2>
-    <div id="weather-widget"></div>
+  <section class="weather" aria-labelledby="weather-heading">
+    <h2 id="weather-heading">Another Day in Paradise</h2>
+    <p><strong>Temperature:</strong> <span id="temp">--</span> °C</p>
+    <p><strong>Feels Like:</strong> <span id="feels">--</span> °C</p>
   </section>
+
   
   <main>
     <section class="booking-options">
@@ -122,4 +124,5 @@
     <p>&copy; Shangri-La 2025</p>
   </footer>
 </body>
+<script src="weather.js"></script>
 </html>

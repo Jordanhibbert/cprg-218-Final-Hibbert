@@ -82,9 +82,18 @@ main {
   }
   
   .weather {
-    background: #B6C3BA;
-    padding: 2rem;
+    background-color: #B6C3BA;
+    color: #1F6776;
     text-align: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 400px;
+    margin: 2rem auto;
+  }
+  
+  .weather p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
   }
   
   .booking-options {
@@ -235,7 +244,7 @@ main {
   .booking-layout {
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap;
+    flex-direction: vertical;
     align-items: flex-start;
     padding: 2rem 0;
   }
