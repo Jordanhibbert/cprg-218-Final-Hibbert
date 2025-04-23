@@ -1,3 +1,18 @@
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
 main {
     padding: 2rem;
     max-width: 1200px;
@@ -25,12 +40,15 @@ main {
     align-items: center;
     flex-wrap: wrap;
   }
-  h1, h2, h3 {
-    font-family: 'Cormorant', 'Palatino Linotype' 'Georgia', 'Times New Roman', serif;
+  h1, h2, h3, h4, h5 {
+    font-family: 'Cormorant Garamond', 'Palatino Linotype', 'Georgia', 'Times New Roman', serif;
+  }
+
+  p {
+    font-family: 'Nunito Sans', 'Helvetica Neue','Segoe UI', Arial, sans-serif;
   }
   
   nav .logo {
-    font-family: 'Cormorant', 'Palatino Linotype' 'Georgia', 'Times New Roman', serif;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
@@ -77,7 +95,6 @@ main {
     position: relative;
     z-index: 2;
     margin: 0.5rem;
-    font-family: 'Cormorant', 'Palatino Linotype' 'Georgia', 'Times New Roman', serif;
     font-size: 3rem;
   }
   
@@ -141,7 +158,6 @@ main {
   
   .media-gallery h2 {
     width: 100%;
-    font-family: 'Cormorant', 'Palatino Linotype' 'Georgia', 'Times New Roman', serif;
     font-size: 2rem;
     color: #1F6776;
     margin-bottom: 1rem;
@@ -171,7 +187,6 @@ main {
   }
   
   .testimonials h2 {
-    font-family: 'Cormorant', serif;
     font-size: 2rem;
     color: #1F6776;
     margin-bottom: 2rem;
@@ -180,7 +195,6 @@ main {
   .testimonials article {
     max-width: 600px;
     margin: 0 auto 2rem;
-    font-family: 'Nunito Sans', sans-serif;
     background-color: #FBFAF5;
     padding: 1.5rem;
     border-radius: 0.75rem;
@@ -206,7 +220,6 @@ main {
     flex-wrap: wrap;
   }
   
-  /* Image styling */
   article.dining-row img {
     width: 35%;
     max-width: 250px;
@@ -214,14 +227,12 @@ main {
     flex-shrink: 0;
   }
   
-  /* Text content layout */
   article.dining-row section {
     flex: 1;
     background-color: #B6C3BA;
     padding: 1rem;
   }
   
-  /* Responsive stacking on smaller screens */
   @media (max-width: 768px) {
     article.dining-row,
     article.dining-row.reverse {
@@ -299,14 +310,9 @@ main {
   }
   
   .amenities h2 {
-    font-family: 'Cormorant', serif;
     font-size: 1.5rem;
     color: #1F6776;
     margin-bottom: 0.5rem;
-  }
-  
-  .amenities p {
-    font-family: 'Nunito Sans', sans-serif;
   }
 
   .activities {
@@ -317,7 +323,6 @@ main {
     padding: 2rem 0;
   }
   
-  /* Section Headers with Background */
   .activities header {
     width: 100%;
     background-color: #B6C3BA;
@@ -334,7 +339,6 @@ main {
     margin: 0;
   }
   
-  /* Activity Cards */
   .activities article {
     background-color: #FBFAF5;
     border: 1px solid #ddd;
@@ -350,13 +354,11 @@ main {
   }
   
   .activities article h3 {
-    font-family: 'Cormorant', serif;
     color: #1F6776;
     margin-bottom: 0.5rem;
   }
   
   .activities article p {
-    font-family: 'Nunito Sans', sans-serif;
     margin-bottom: 1rem;
   }
 
@@ -367,20 +369,24 @@ main {
     text-align: center;
   }
   
+  footer nav {
+    display: flex;
+    justify-content: center;
+  }
+  
   footer nav ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
     list-style: none;
-    margin-bottom: 1rem;
+    padding: 0;
   }
   
   footer address {
     font-style: normal;
     margin-bottom: 1rem;
   }
-  
-  /* Responsive Typography */
+
   @media (max-width: 600px) {
     .hero h1 {
       font-size: 2rem;
