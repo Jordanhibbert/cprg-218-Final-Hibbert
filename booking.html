@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav>
@@ -23,31 +24,37 @@
           </ul>
         </nav>
       </header>
+
   <main class="booking-layout">
     <h1>Book Your Stay</h1>
      <figure>
         <img src="media/bedroom-door-entrance-271639.jpg" alt="Bedroom door opening at Shangri-La Resort">
+        <figcaption>Paradise Awaits...</figcaption>
      </figure>
+
     <form class="booking-form">
+
       <label for="checkin">Check-in</label>
-      <input type="date" id="checkin" name="checkin" required>
+        <input type="date" id="checkin" name="checkin" required>
 
       <label for="checkout">Check-out</label>
-      <input type="date" id="checkout" name="checkout" required>
+        <input type="date" id="checkout" name="checkout" required>
 
       <label for="room">Room Type</label>
-      <select id="room" name="room">
-        <option>Ocean View</option>
-        <option>Beachfront</option>
-        <option>Garden View</option>
-      </select>
+        <select id="room" name="room">
+         <option>Ocean View</option>
+          <option>Beachfront</option>
+          <option>Garden View</option>
+        </select>
 
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required>
 
       <button class="btn" type="submit">Book Now</button>
     </form>
+
   </main>
+  
   <footer>
     <nav>
       <ul>
