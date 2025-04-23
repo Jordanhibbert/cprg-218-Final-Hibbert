@@ -1,5 +1,4 @@
-const apiURL = "https://api.weatherapi.com/v1/current.json?q=Manzanillo&key=4e5e576e864142e780a45600252403";
-
+const apiURL = "https://api.weatherapi.com/v1/current.json?q=Cancun&key=YOUR_API_KEY";
 fetch(apiURL)
   .then(response => {
     if (!response.ok) {
