@@ -1,10 +1,12 @@
 Shangri-La Attributions
 Jordan Hibbert
+
 Media Attributions
 
 All media from project package or primary source.
 
 Weather API from OpenWeather: https://openweathermap.org/api
+
 Content References
 CSS-Tricks. (2017, Mar 7). The checkbox hack. https://css-tricks.com/the-checkbox-hack/
 CSS-Tricks. (2024, Aug 12). A complete guide to Flexbox. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
