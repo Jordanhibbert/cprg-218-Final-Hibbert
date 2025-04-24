@@ -9,8 +9,8 @@ fetch(apiURL)
     return response.json();
   })
   .then(data => {
-    document.getElementById("temp").textContent = data.current.temp_c;
-    document.getElementById("feels").textContent = data.current.feelslike_c;
+    document.getElementById("temp").textContent = data.main.temp + "°C";
+    document.getElementById("feels").textContent = data.main.feels_like + "°C";
   })
   .catch(error => {
     console.error("Error fetching weather:", error);

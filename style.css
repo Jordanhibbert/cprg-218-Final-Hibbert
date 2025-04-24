@@ -43,10 +43,6 @@ main {
   h1, h2, h3, h4, h5 {
     font-family: 'Cormorant Garamond', 'Palatino Linotype', 'Georgia', 'Times New Roman', serif;
   }
-
-  p {
-    font-family: 'Nunito Sans', 'Helvetica Neue','Segoe UI', Arial, sans-serif;
-  }
   
   nav .logo {
     font-size: 1.5rem;
@@ -99,18 +95,23 @@ main {
   }
   
   .weather {
+    font-size: 0.9rem;
     background-color: #B6C3BA;
     color: #1F6776;
-    text-align: center;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    max-width: 400px;
-    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    white-space: nowrap;
   }
   
   .weather p {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 500;
   }
   
   .booking-options {
@@ -333,7 +334,6 @@ main {
   }
   
   .activities header h2 {
-    font-family: 'Cormorant', serif;
     font-size: 1.75rem;
     color: #1F6776;
     margin: 0;
