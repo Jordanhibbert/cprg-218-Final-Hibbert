@@ -25,6 +25,10 @@ main {
     background-color: #FBFAF5;
     line-height: 1.6;
   }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Cormorant Garamond', 'Palatino Linotype', 'Georgia', 'Times New Roman', serif;
+  }
   
   header {
     background-color: #1F6776;
@@ -39,9 +43,6 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-  }
-  h1, h2, h3, h4, h5 {
-    font-family: 'Cormorant Garamond', 'Palatino Linotype', 'Georgia', 'Times New Roman', serif;
   }
   
   nav .logo {
@@ -65,6 +66,60 @@ main {
   nav a:hover {
     color: #E6634C;
   }
+
+  .menu-toggle-checkbox {
+    display: none;
+  }
+  
+  .menu-toggle-label {
+    display: none;
+    font-size: 2rem;
+    color: #FBFAF5;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .menu-toggle-label {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #1F6776;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+    .nav-links li {
+      padding: 1rem 0;
+    }
+  
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .nav-links {
+      display: flex;
+    }
+  
+    .weather {
+      margin: 1rem 0;
+      text-align: center;
+      align-self: center;
+    }
+  }
+
+  @media (max-width: 380px) {
+    nav .weather {
+      display: none;
+    }
+  }
+  
   
   .hero {
     position: relative;

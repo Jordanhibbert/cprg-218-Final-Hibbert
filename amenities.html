@@ -10,19 +10,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-          <a href="index.html" class="logo"><img src="media/Asset 2.png" alt="Shangri-La Logo"></a>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="dining.html">Dining</a></li>
-            <li><a href="accommodations.html">Accommodations</a></li>
-            <li><a href="amenities.html">Amenities</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li><a href="booking.html">Booking</a></li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <nav>
+
+      <a href="index.html" class="logo">
+        <img src="media/Asset 2.png" alt="Shangri-La Logo">
+      </a>
+
+      <section class="weather" aria-labelledby="weather-heading">
+        <p><strong>Temperature:</strong> <span id="temp">--</span> °C</p>
+        <p><strong>Feels Like:</strong> <span id="feels">--</span> °C</p>
+      </section>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" />
+      <label for="menu-toggle" class="menu-toggle-label" aria-label="Toggle navigation">&#9776;</label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="accommodations.html">Accommodations</a></li>
+        <li><a href="amenities.html">Amenities</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
       <main>
         <h1>Resort Amenities</h1>
         <section class="amenities">
@@ -113,4 +127,5 @@
     <p>&copy; Shangri-La 2025</p>
   </footer>
 </body>
+<script src="weather.js"></script>
 </html>
